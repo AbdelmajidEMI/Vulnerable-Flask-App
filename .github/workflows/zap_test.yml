@@ -62,6 +62,7 @@ jobs:
 
       - name: Run Bandit
         run: bandit -r . || true
+        
 
       - name: Run Safety
         run: safety check --full-report || true
